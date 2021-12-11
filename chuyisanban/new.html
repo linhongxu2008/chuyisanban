@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        #f{
+         
+            display: grid;
+            height: 100%;
+            width: 100%;
+            padding: 0%;
+            margin: 0%;
+            position: absolute;
+           
+           
+            grid-template-columns: 1fr;
+            grid-template-areas:  'a a a a'
+                                  'c c c c'
+                                  
+                                  
+                                  ;
+            grid-template-rows: 0.01fr 5fr ;
+        }
+        #a{
+            grid-area: a;
+        }
+        #b{
+            grid-area: b;
+			overflow: scroll;
+        }
+        #c{
+            grid-area: c;
+        }
+       
+        #c{
+            overflow: scroll;
+        }
+        #c::-webkit-scrollbar{
+            display: none;
+        }
+    #b::-webkit-scrollbar{
+        display: none;
+    }
+
+        .c{
+            box-shadow: 1px 1px  2px ;
+          
+            
+        }
+
+        .gongzhonghao{
+            font-size: 22px;
+            color: blanchedalmond;
+            overflow: scroll;
+        
+        }
+        .gongzhonghao:hover{
+            border-bottom: rgb(255, 255, 255) solid 3px;
+        }
+        .gongzhonghao::-webkit-scrollbar{
+            display: none;
+        }
+		 #qihan{
+		
+		 position:flex;
+	 }
+	 .imgpicture{width: 98%;}
+	 .button{
+		 border: #000000 solid 1px;
+		 width: 96vw;
+		background: rgba(255, 255, 255, 0.3);
+		overflow: scroll;
+		margin-top: 3px;
+		margin-bottom: 3px;
+		
+	 }
+	 .button::-webkit-scrollbar{
+	     display: none;
+	 }
+	 #qiantao{
+		 margin-top: 50px;
+		 border: #000000 solid 2px;
+		 width: 98vw;
+		 background:rgba(255, 255, 255, 0.7) ;
+		 color: black;
+	 }
+	.button:active{
+		border: #0000ff solid 0.125rem;
+	}
+
+
+
+	#dd{
+		margin: 10px;
+		width: 95vw;
+		border: solid black 1px;
+
+		border-radius: 8px 8px 8px 8px;
+		
+	}
+	.h1title{
+		height: 60px;
+		width: 60px;
+		float: right;
+		
+	}
+	h2{
+		display: inline-block;
+	}
+#header{
+		height: 50px;
+		position: fixed;
+		z-index: 1;
+		top: 10px;
+		left:0;
+		display: block;
+		
+	}
+		
+	a{
+		margin: 0;
+		padding: 0;
+	}
+	#nav{
+		position: fixed;
+		margin-bottom: 10px;
+		top: 70px;
+		width: 0;
+		text-align: center;
+		color: black;
+		overflow: hidden;
+		
+	}
+	#all{
+		background-color: white;
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 0px;
+		height:200px;
+		
+		overflow: hidden;
+		animation: h 1s forwards ;
+		
+	}
+	
+	#header:hover>#all {
+		
+		overflow: auto;
+		animation-name: hn;
+		animation-duration: 1s;
+		
+		animation-fill-mode: forwards;
+	}
+	#header:hover>#all>#nav {
+		width: 100px;
+	}
+	
+	@keyframes h{
+		from{
+			width: 110px;
+			height: 200px;
+			
+		}
+		to{width:0 ;
+			
+			
+			}
+	}
+	@keyframes hn{
+		
+		from{
+			width: 0px;
+			
+			}
+			to{
+			
+			width: 110px;
+		}
+	}
+	#qiantao{
+		margin-top: 300px;
+	}
+    </style>
+<script src="ceju.js" defer></script>
+
+<title>初一三班的网站</title><link rel="icon" href="https://pic.imgdb.cn/item/6174d1732ab3f51d91d282bf.png" type="image/x-icon">
+</head>
+<body>
+	
+    <div class="bg-img"></div>
+	<div id="header"><img   src="https://link.jscdn.cn/1drv/aHR0cHM6Ly8xZHJ2Lm1zL3UvcyFBazRDYXl6Z05qSm5nUUQyY1VXa3JHa091cXVoP2U9VXZtOUc1.png" style="top: 15px; z-index: 1; left: 23px; position: fixed;
+	 width: 50px;height: 50px;border: #000000 solid 2px;border-radius: 100px;">
+	<div id="all">
+	
+	<div id="nav">
+		<center>
+		<a href="index.html" class="nav">首页</a><br />
+		<a href="new.html" class="nav">资讯</a><br />
+		<a href="21th.html"class="nav">学习使我快乐</a>
+		
+		</center>
+	</div>
+	</div>
+	</div>
+    <div id="f">
+      
+		
+	<div class="c"  id="c">
+		<center>
+		<div id="dd">
+			
+		</div>
+		</center>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		 
+		 <center>
+			<div  id="qiantao">
+			 <!--1.起航-->
+			 
+		<button id="qihan" onclick="qihan()" class="button"><h2>001启航</h2> </button><br>
+<script>
+	function qihan(){
+	document.getElementById("dd").innerHTML ="<br> <h1> 题记：</h1><h2>铿锵有力，迎八月骄阳，飒爽英姿，立天地之间。你们坚持不懈的英姿，真飒！<br /></h2><img src = 'https://pic.imgdb.cn/item/617cd5ad2ab3f51d911f1ae1.png' class='imgpicture'/><br />31日，在厦门二中的操场上，新初一3班同学们，在全年段面前展示军训三天以来的成果。秋风静美，雁过留声。在这金秋，同学们为正式开学做好了准备。  <br /><br /><br />28日下午训开营仪式在操场举行。虽然太阳毒辣，但同学们仍耐住热坚持下来，展现了同学们对未来考验的无限勇气和无限挑战。军训对我们初一3班的同学们来说，是严峻的考验。“立正！”“稍息！”“蹲下”……教官们重复对同学们下达着口令，一次次的转体，一遍遍的军姿，这枯燥的动作未能让同学们停下，越发显得你们稳重与沉着。夏日炎炎，同学们的身姿在阳光的衬托下，格外显眼。汗水肆意挥洒，但同学们用自己的行动磨练了意志。当那一声声口号响彻整个操场时，我觉得，那是在向天空诉说强国，强军，强我少年的梦想！在这几天的时间里，同学们经历了身体的不适，也经历了繁重，无聊的训练，但是同学们还是下决心把他挺过去。“天降大任于斯人也，苦其心志，劳其筋骨，饿其体肤，空乏其身。”让我们一起挥别过去，开始新的征程，逐渐成长为一位合格的初中生。<br />  <img src = 'https://s3.bmp.ovh/imgs/2021/10/39da1df618432810.webp'  class='imgpicture'/>30日，会操展示如期而至，3班的同学以默契的配合，踏整齐步伐，声铿锵有力，以最好的姿态接受学校师生的检阅。在我们班同学的身上，看到了充满希望的未来。最终，三班的同学获得了二等奖的好成绩，得到了学校领导的赞扬。而在军训过程中，还涌现出了许多模范榜样，其中：李健智，李子萱，卢玥同学获得了学校“军训标兵”的称号。祝贺三班的小伙伴们！<br /> <img src = 'https://s3.bmp.ovh/imgs/2021/10/ab148c0476817e0d.webp'   class='imgpicture'/><img src = 'https://s3.bmp.ovh/imgs/2021/10/126122e3ce1536da.webp'   class='imgpicture' /><img src = 'https://s3.bmp.ovh/imgs/2021/10/e71de6cfa13abb98.webp'   class='imgpicture'/>这次会操虽然未拿到一等奖，但这只是一个新的开始，同学们收获的更多。愿在接下来的三年里，我们共同努力，奋发拼搏，共同为这个班级争荣誉吧！ <br /> 唯有经过磨练 雄鹰方能翱翔天际。经过这次军训，3班的同学们乃成严格自律之人。让我们一起成长，一路高歌！<br />";
+	document.getElementById("c").scrollTop = 0;
+	}
+	</script>
+	
+	 <!--2.班标-->
+	
+	<button id="qihan" onclick="banbiao()" class="button"><h2>002笔墨晕染,一纸山河——3班班标评选新鲜出炉啦~</h2></button><br>
+<script>
+	function banbiao(){
+	document.getElementById("c").scrollTop = 0;
+	document.getElementById("dd").innerHTML ="<h1>	 <h1> 题记：</h1><h2>书奇思且游浮云之上，描轮廓而绘天地之间，遥望明月妙想自心腔喷发，中秋之际的佳作，也会沾染些许广寒宫的仙气吧？<br /></h2>9月19日晚上班委发布了“班徽海选方案策划书”之后，便在班级之内掀起了一番热潮，同学们绞尽脑汁，全都希望自己作品能在3天后的优胜作品中占有一席之地。电子稿与手绘，水彩与黑白，这是实力与思想的比拼，更是灵魂和艺术的碰撞。花样层出不穷，新意灿若繁星，同学们都拿起了自己的画笔，有的画下白帆小舟，寓意“乘风破浪会有时，直挂云帆济沧海”；有的绘出清洁白莲，代表“出淤泥而不染，濯清涟而不妖”；更有同学，画下皎皎明月，幢幢红楼，片片清云，翩若惊鸿，婉若游龙的舞女。中秋之时，他们按捺住自己的满心激动，期待着明天的评比结果。<br /><br /><br /><img src='https://pic.imgdb.cn/item/617cc7902ab3f51d9112202f.png' class='imgpicture'>9月22日的下午，相关班委公布了入选名单及投票处，同学们持着自己那宝贵的两票，看了一遍又一遍的介绍，想了一遍又一遍，左右纠结，难以抉择：因为每一篇作品都是3班同学们的心血付出，每一篇都配得上“佳作”这个称号。最后，沈雯静同学以58票的优秀成绩稳居第一，恭喜！目前她的作品还在进行最后润色，让我们一起期待3班未来的班标！当然，第二名到第五名也是足够优秀，有资格让人啧啧称奇的，她们分别是：曹舒菡、李欣恬、黄思颖、赖央！她们认真的态度也应该收到我们热烈的掌声和由衷的赞美。<br /><br /><br />班标代表了班级文化的升华，说明了3班自军训以来再一次的进步。未来3班肯定还会有更多的进步与突破，且让我们拭目以待。<br /><br /><br />接下来，就让我们来一睹她们的设计吧！<br /><br /><br /><img src='https://pic.imgdb.cn/item/617cc7e32ab3f51d91127d50.png' class='imgpicture'><img src='https://pic.imgdb.cn/item/617cc7e32ab3f51d91127d57.png' class='imgpicture'><img src='https://pic.imgdb.cn/item/617cc7e32ab3f51d91127d5f.png' class='imgpicture'><img src='https://pic.imgdb.cn/item/617cc7e42ab3f51d91127de4.png' class='imgpicture'><img src='https://pic.imgdb.cn/item/617cc85f2ab3f51d91130ddf.png' class='imgpicture'>思颖同学将雯静同学的手绘作品制成了电子版！这便是集体的力量！<!-- 对不起，视频没发传上去--> </h1>";
+	}
+	</script>
+		
+		 <!--3.感恩-->
+	
+		<button id="qihan" onclick="ganen()"  class="button"><h2>003怀揣感恩，一路前行</h2></button><br>
+		<script>
+			function ganen(){
+				document.getElementById("c").scrollTop = 0;
+			document.getElementById("dd").innerHTML ="<h3>生活中需要感谢的人有很多：比如亲爱的父母，辛勤付出的老师，再比如在这段时间里，不分昼夜的医护人员等等。还有很多平凡而又伟大的人，我们都欠他们一句“谢谢”。因此，三班班委特别策划了此次活动，希望同学们能积极参加，表达出内心的感激之情。在这次活动中，许多同学都交了作品，表达了心中的感激之情，还有很多同学甚至交了两个。这让班委们十分欣喜。有不少同学的作品被评为优秀作品，让我们一起来看看吧~<br /></h3>有同学选择用文字来诉说：<br /><img src='https://pic.imgdb.cn/item/617ccb522ab3f51d9116353e.png' class='imgpicture'><img src='https://pic.imgdb.cn/item/617ccb522ab3f51d9116353e.png' class='imgpicture'><img src='https://pic.imgdb.cn/item/617ccb522ab3f51d91163543.png' class='imgpicture'><img src='https://pic.imgdb.cn/item/617ccb522ab3f51d9116354a.png' class='imgpicture'>——李子萱<br />有同学选择用画笔来描绘：<br /><img src='https://pic.imgdb.cn/item/617ccb522ab3f51d911635a4.png' class='imgpicture'>林佳宇<br /><img src='https://pic.imgdb.cn/item/617ccbb52ab3f51d91168853.png' class='imgpicture'> 林允之<br /><img src='https://pic.imgdb.cn/item/617ccbb52ab3f51d9116885a.png' class='imgpicture'><img src='https://pic.imgdb.cn/item/617ccbb52ab3f51d91168868.png' class='imgpicture'>沈雯静<br />   <img src='https://pic.imgdb.cn/item/617ccbb92ab3f51d91168c9d.png' class='imgpicture'>李欣恬<br /><img src='https://pic.imgdb.cn/item/617ccbba2ab3f51d91168cc8.png' class='imgpicture'>蒋昕怡<br /><img src='https://pic.imgdb.cn/item/617cccbb2ab3f51d911781b5.png' class='imgpicture'>杨斯淇<br /><img src='https://pic.imgdb.cn/item/617cccbb2ab3f51d911781bb.png' class='imgpicture'>郑思婷<br /><img src='https://pic.imgdb.cn/item/617ccce32ab3f51d9117ab82.png' class='imgpicture'>林佳宇<br /><img src='https://pic.imgdb.cn/item/617ccce32ab3f51d9117ab8a.png' class='imgpicture'> 蔡子恒<br /><br />也有一些同学选择以声音来表达情愫：<br /><br />赖央<br />李诗莹<br />盛乐<br /><br /><br />还有很多同学用相机记录下了自己的感动：<br /><img src='https://pic.imgdb.cn/item/617ccd3a2ab3f51d9117fd10.png' class='imgpicture'>朱子墨拍摄<br /><img src='https://pic.imgdb.cn/item/617ccd3a2ab3f51d9117fd14.png' class='imgpicture'>马子烨拍摄<br />在生活中，我们也要学会感恩。因为，没有别人的辛勤付出，哪有我们的幸福生活，你说对不？<br />";	
+		    }
+			
+			
+			</script>
+			
+			<!--4.重逢-->
+	
+			<button id="qihan" onclick="chongfen()"  class="button"><h2>004重启重逢</h2></button><br>
+<script>
+	function chongfen(){
+		document.getElementById("c").scrollTop = 0;
+	document.getElementById("dd").innerHTML ="“疫”散云开<br />复学扬帆<br />我们一起回到了<br />久违而美好的校园<br />好久不见，三班人！<br /><img src='https://pic.imgdb.cn/item/617d0ca02ab3f51d91571d95.png' class='imgpicture'>Part1 核酸检测<br />酷暑渐去，秋风乍起。在全厦门人民的齐心协力之下，疫情终于远去复学的脚步终于越来越近了。按照通知，10月16日上午，厦门二中初一的同学们到学校进行核酸检测。怀着对复学的热忱，我们初一3班的同学们早早就进入了校园。开学没多久就碰到疫情，一个月后重返校园颇有近乡情怯之感。<br />核酸采样按照班级顺序进行，同学们都耐心等待着，分开了许久又见面了，大家十分开心，间或分享网课期间的趣事，队伍间时不时传来吃吃的笑声。终于轮到3班了，同学们十个一组，一个一个走到工作人员面前，由于之前已经进行过多次核酸采样了，大伙对此驾轻就熟，坐下、张嘴、“啊”，一气呵成，一切都井然有序。检测完了都不忘对检测人员说声“谢谢”。<br />核酸检测很快就结束了，同学们相伴走出了校门。行走于初秋微凉的风里，树影婆娑，淡淡的阳光光影斑驳，从大榕树间投下，给这个世界带来温暖和希冀……<br />	<img src='https://pic.imgdb.cn/item/617d0c9e2ab3f51d91571baa.png' class='imgpicture'>Part2 复学复课<br />秋风咋起，落叶纷纷。在做完核酸检测后，10月18日，同学们终于回到了久违的校园，重新开启了校园生活。<br />经过一个多月的努力和等待，恢复线下教学的铃声终于又在校园里响起。从线上教学转到线下教学，同学们面临新的挑战，下床就是课桌的日子不再。但重逢不易，彼此珍惜。为了让同学们尽快恢复到之前线下教学的状态，重新适应校园生活，校长在复学的第一课就着重强调了今后的防疫以及复学的要求。同学们对此牢记在心，相信我们三班的同学们定会很快恢复到复学前的状态。<br />随后，班级也开展了关于安全教育的班会活动，同学们积极响应。疫情还未完全解除，大家虽然都戴着口罩，但同学们的情感通过声音，透过眼神，完全打破了口罩带来的隔阂。此刻的相聚，来之不易，这凝聚了社会各界及学校老师同学的诸多心血。3班，又充满了生机与活力。我们终究再次齐聚一堂，一个都没少，相信在我们的共同努力下，我们3班的魔方定会尽快归位。<br /><img src='https://pic.imgdb.cn/item/617d0c9e2ab3f51d91571bb0.png' class='imgpicture'>在经历了这场疫情后，同学们都长大了许多，从最初恐慌、焦躁、麻木、无奈，再到平静、安宁、积极、进取。正所谓艰难困苦，玉汝于成。<br />口罩虽遮住了一半面容<br />但那神采飞扬的明眸<br />却盈满青春的热情<br /> 接下来的日子<br />咱们共同努力！<br /><img src='https://pic.imgdb.cn/item/617d0c9e2ab3f51d91571bbb.png' class='imgpicture'>";
+	}
+	</script>
+
+			
+			<!--5.研学-->
+		
+				<button id="qihan" onclick="yanxue()"  class="button"><h2>005鼓浪屿研学之旅</h2></button><br>
+<script>
+	function yanxue(){
+		
+	document.getElementById("dd").innerHTML ="<h2>林木葱翳，怪石嵯峨，海涛万顷掩晴空；冁然而笑，神采飞扬，伴荫而行鼓浪游。<br />——题记</h2><img src='https://pic.imgdb.cn/item/61a23b1e2ab3f51d913552ac.jpg' class='imgpicture' >  研学旅行，说是一次体验，不如说是一次游玩。利用星期五两节语文课的时间，叶老师带领我们班同学在鼓浪屿上一游，感受人文与自然杂糅的沉淀。听到可以出校一游的消息，每个同学的脸上都洋溢着快乐的笑容，心里激动而兴奋。鼓浪屿，我们来啦！ 一出校门，同学们便如脱缰的野马一般，或成群结队，或三两而行，各自谈笑风生，那是自由的气息呀！我们沿着大使馆旧址而行，大使馆旧址已只剩下了地基，散落的石块仿佛在述说着曾经的繁荣与落败，岁月失语，唯石能言，不禁让人心生感慨。一路上，天高云淡，绿意盎然。同学们行至海边，一切豁然开朗，见到那海与对面的高楼，就情不自禁地欢呼起来。清爽而带着淡淡腥气的海风吹拂着同学们的头发，也吹拂于同学们的心间；深蓝的海面，像丝绸一般柔和，在阳光下微荡着涟漪，海似乎就在身边，轻轻絮语；金黄的沙滩映衬着碧蓝的大海，椰树于海风中摇曳。同学们倾听着海的声音，感受着大自然的脉搏，心里不禁涌起一股莫名的兴奋。抬起手，风轻轻划过指尖。子萱觉得，那是自然的味道。同学们沿林荫小道向前走去，叶老师向我们讲起了鼓浪屿的往昔，他一一说起道旁的洋房，矗立的石碑，斑驳的摩崖石刻……鼓浪屿的每一处建筑都有不一样的历史。同学们随叶老师漫步于林荫之间，用心体味这岛上的一草一木，一枝一叶。高大的榕树，青翠欲滴。婵媛说，她喜欢这清爽绿荫中的静谧。这滋味，妙不可言……不过多时，叶老师就已带领我们行至工商美术学院。叶老师也是老鼓浪屿人，鼓浪屿上的一屋一棂都令他倍感熟悉。叶老师轻车熟路地带领我们穿过学院，向小巷里走去。天地无尘，山河有影，斑驳的漆墙，古旧的红瓦，伴随着老鼓浪屿人的生活与日常，在时光的积淀下有了别样的韵味。子墨同学手持相机，与子烨和昭彤同学一起，以相机记录生活中的一点一滴，定格生活中的美好。同学们的笑声打破了树林中的沉寂，大家都情绪高涨，或而窃窃私语，或而语笑喧阗，不亦快哉！早上的研学活动很快就结束了，当同学们迈着依旧轻松的步伐沿安海路走向学校时，我同赖央、舒菡留恋地望向小巷深处，深秋的风吹拂着，拂过曾经的历史，也拂过当下我们走过的路，时光荏苒，弹指百年。思颖觉得，今日研学之所得，不仅得于鼓浪屿风景的秀丽，亦得于历史与人文的积淀。转身一瞥，双子塔的塔尖在阳光下熠熠生辉，令人恍惚置身于历史与现实的交叉路口。碧空万里，秋日的阳光静静地洒在鼓浪屿上，越发让人感觉到一丝安详。同学们徜徉在历史的长河中，静静沉思。鼓浪屿研学之行，让我们放松了心情，增长了见识，拓展了同学们的视野。回眸往昔，一眼千里。鼓浪之美，亦夫如此。阳光下，郑成功的雕像静静矗立着，面向大海深处，他似乎在等待着什么。鼓浪屿，是那么安宁，那么静谧……<center><h2>本文作者：林允之</h2></center>";
+	document.getElementById("c").scrollTop = 0;
+	}
+	</script>
+	
+			</div>
+			</center>
+        </div>
+    </div>
+</body>
+</html>

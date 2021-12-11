@@ -1,0 +1,96 @@
+#input{
+	width: 70vw;
+	height: 15px;
+	
+}
+
+#a{
+	text-decoration-line: none;
+	margin-top: 7.5px;
+	padding: 0;
+	position: relative;
+	top: 0;
+	border: wheat solid 2px;
+	background-color:buttonface;
+	color: black;
+}
+	
+#h1{
+	color: #1DAEE9;
+}
+
+#h2{
+	color: #33CCCC;
+}
+
+#h3{
+	color: #5BD5A0;
+}
+
+#button{
+	box-shadow:1px 1px  100px rgba(199, 199, 199, 0.5) ;
+	position: fixed;
+	border: none;
+	width: 50px;
+	height: 50px;
+	background: rgba(199, 199, 199, 0.3);
+	top: 60px;
+	right: 20px;
+	z-index: 1;
+}
+	
+	
+#c{
+	top: 0;
+	left: 0;
+	margin-top:10px ;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+	overflow: auto;
+}
+body::-webkit-scrollbar{
+		display: none;
+	}
+	
+	header{
+		
+	display: block;
+	width: 55px;
+	height: 20px;
+	border: #000000 solid;
+	border-radius: 100px;
+	overflow: hidden;
+	animation-name: iw;
+	animation-duration: 1s;
+	animation-fill-mode: forwards;
+	position: fixed;
+	top: 0;
+	}
+	.nav{
+		color: #27a5d3;
+		text-decoration-line: none;
+		margin-left: 10px;
+	}
+	
+	header::-webkit-scrollbar{
+		display: none;
+	}	
+	header:hover{
+		width: 95vw;
+		overflow:auto;
+		animation-name: wi;
+		animation-duration: 1s;
+		animation-fill-mode: forwards;
+		
+	}
+	@keyframes wi{
+		from{width: 55px;}
+		to{width: 95vw;}
+	}
+	@keyframes iw{
+		from{width: 95vw;}
+		to{width: 55px;}
+		
+	}
